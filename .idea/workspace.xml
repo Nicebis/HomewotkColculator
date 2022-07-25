@@ -129,7 +129,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/Selenium/BaseSeleniumTest.java</url>
-          <line>23</line>
+          <line>22</line>
           <properties class="Selenium.BaseSeleniumTest" method="beforeSuite">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -138,16 +138,16 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/Selenium/BaseSeleniumTest.java</url>
-          <line>43</line>
+          <line>42</line>
           <properties class="Selenium.BaseSeleniumTest" method="searchBoxPochta">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
-          <option name="timeStamp" value="9" />
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/Selenium/BaseSeleniumTest.java</url>
-          <line>44</line>
+          <line>43</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
