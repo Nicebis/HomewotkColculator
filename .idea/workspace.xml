@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="892f0350-9646-4111-8552-61f7f7b730ab" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Selenium/SeleniumTestEx2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Selenium/BaseSeleniumTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Selenium/BaseSeleniumTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Selenium/BaseSeleniumTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Selenium/BaseSeleniumTestEx1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,8 +41,8 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;org.infernus.idea.checkstyle.CheckStyleConfigurable&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.BaseSeleniumTest.searchBoxPochta">
-    <configuration name="BaseSeleniumTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.SeleniumTestEx2.PapkaTest">
+    <configuration name="BaseSeleniumTestEx1" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="HomewotkColculator" />
       <extension name="coverage">
         <pattern>
@@ -50,7 +51,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Selenium" />
-      <option name="MAIN_CLASS_NAME" value="Selenium.BaseSeleniumTest" />
+      <option name="MAIN_CLASS_NAME" value="Selenium.BaseSeleniumTestEx1" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -58,7 +59,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BaseSeleniumTest.PochtaTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="BaseSeleniumTestEx1.PochtaTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="HomewotkColculator" />
       <extension name="coverage">
         <pattern>
@@ -67,7 +68,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Selenium" />
-      <option name="MAIN_CLASS_NAME" value="Selenium.BaseSeleniumTest" />
+      <option name="MAIN_CLASS_NAME" value="Selenium.BaseSeleniumTestEx1" />
       <option name="METHOD_NAME" value="PochtaTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -76,7 +77,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BaseSeleniumTest.searchBoxPochta" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="BaseSeleniumTestEx1.searchBoxPochta" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="HomewotkColculator" />
       <extension name="coverage">
         <pattern>
@@ -85,8 +86,26 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Selenium" />
-      <option name="MAIN_CLASS_NAME" value="Selenium.BaseSeleniumTest" />
+      <option name="MAIN_CLASS_NAME" value="Selenium.BaseSeleniumTestEx1" />
       <option name="METHOD_NAME" value="searchBoxPochta" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeleniumTestEx2.PapkaTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="HomewotkColculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Selenium.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Selenium" />
+      <option name="MAIN_CLASS_NAME" value="Selenium.SeleniumTestEx2" />
+      <option name="METHOD_NAME" value="PapkaTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -96,9 +115,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.BaseSeleniumTest.searchBoxPochta" />
-        <item itemvalue="TestNG.BaseSeleniumTest" />
-        <item itemvalue="TestNG.BaseSeleniumTest.PochtaTest" />
+        <item itemvalue="TestNG.SeleniumTestEx2.PapkaTest" />
+        <item itemvalue="TestNG.BaseSeleniumTestEx1.searchBoxPochta" />
+        <item itemvalue="TestNG.BaseSeleniumTestEx1" />
+        <item itemvalue="TestNG.BaseSeleniumTestEx1.PochtaTest" />
       </list>
     </recent_temporary>
   </component>
@@ -128,26 +148,26 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/Selenium/BaseSeleniumTest.java</url>
+          <url>file://$PROJECT_DIR$/src/test/java/Selenium/BaseSeleniumTestEx1.java</url>
           <line>22</line>
-          <properties class="Selenium.BaseSeleniumTest" method="beforeSuite">
+          <properties class="Selenium.BaseSeleniumTestEx1" method="beforeSuite">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/Selenium/BaseSeleniumTest.java</url>
-          <line>42</line>
-          <properties class="Selenium.BaseSeleniumTest" method="searchBoxPochta">
+          <url>file://$PROJECT_DIR$/src/test/java/Selenium/BaseSeleniumTestEx1.java</url>
+          <line>35</line>
+          <properties class="Selenium.BaseSeleniumTestEx1" method="searchBoxPochta">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/Selenium/BaseSeleniumTest.java</url>
-          <line>43</line>
+          <url>file://$PROJECT_DIR$/src/test/java/Selenium/BaseSeleniumTestEx1.java</url>
+          <line>36</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>

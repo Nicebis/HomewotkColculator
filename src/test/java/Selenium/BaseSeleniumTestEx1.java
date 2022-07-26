@@ -15,28 +15,21 @@ import java.time.Duration;
 
 import static org.testng.Assert.*;
 
-public class BaseSeleniumTest {
+public class BaseSeleniumTestEx1 {
     private static final String GOOGLE_URL = "https://google.com";
     private WebDriver driver;
 
     @BeforeSuite
     public void beforeSuite() {
         WebDriverManager.chromedriver().setup();
+
     }
 
     @BeforeMethod
     public void setUp() {
         driver = new ChromeDriver();
         driver.navigate().to(GOOGLE_URL);
-    }
-
-    @Test
-    public void PochtaTest() {
-        WebElement pochta = driver.findElement(By.xpath("//*[@class='gb_d']"));
-        pochta.click();
-        assertTrue(driver.getTitle().contains("Gmail"));
-
-
+        driver.manage().window().maximize();
     }
 
     @Test
@@ -99,6 +92,16 @@ public class BaseSeleniumTest {
         OtpravLetter.click();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
         assertTrue(driver.findElement(By.xpath("//*[@title='Homework']")).isDisplayed());
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
+        WebElement Icon = driver.findElement(By.xpath("//img[@class='user-pic__image']"));
+        Icon.click();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
+        WebElement Vixod = driver.findElement(By.xpath("//*[contains(@class,'legouser__menu-item_action_exit')]"));
+        Vixod.click();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
+        assertTrue(driver.findElement(By.xpath("//*[@id='passp:sign-in']")).isDisplayed());
+
+
 
 
 
