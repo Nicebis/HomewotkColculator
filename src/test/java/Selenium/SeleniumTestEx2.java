@@ -74,12 +74,32 @@ public class SeleniumTestEx2 {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
         assertTrue(driver.findElement(By.xpath("//*[@title='HomeworkТест']")).isDisplayed());
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
-        WebElement Papki = driver.findElement(By.xpath("//div[contains(@aria-label,'Мои папки')]"));
+        WebElement Papki = driver.findElement(By.xpath("//*[contains(@class,'qa-LeftColumn-FolderExpander')]"));
         Papki.click();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
         WebElement PapkaTest = driver.findElement(By.xpath("//*[@href='#folder/8']"));
         PapkaTest.click();
+        //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
+        //Reload.click();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
+        assertTrue(driver.findElement(By.xpath("//*[contains(@class,'mail-MessageSnippet-Item')]")).isDisplayed());
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
+        assertTrue(driver.findElement(By.xpath("//*[text()='Gimitry Gimotrov']")).isDisplayed());
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
+        assertTrue(driver.findElement(By.xpath("//*[@title='HomeworkТест']")).isDisplayed());
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
+        assertTrue(driver.findElement(By.xpath("//*[text()='Selenium Homework3']")).isDisplayed());
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
+        WebElement Img = driver.findElement(By.xpath("//*[@class='user-pic__image']"));
+        Img.click();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
+        WebElement Vixod = driver.findElement(By.xpath("//*[contains(@class,'legouser__menu-item_action_exit')]"));
+        Vixod.click();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
+        //assertTrue(driver.findElement(By.xpath("//*[@id='passp:sign-in']")).isDisplayed());
+
+
+
 
 
 
