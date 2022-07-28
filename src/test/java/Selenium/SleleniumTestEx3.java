@@ -6,8 +6,6 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
@@ -15,9 +13,10 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
+import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertTrue;
 
-public class SeleniumTestEx2 {
+public class SleleniumTestEx3 {
     private static final String GOOGLE_URL = "https://google.com";
     private WebDriver driver;
 
@@ -34,7 +33,7 @@ public class SeleniumTestEx2 {
         driver.manage().window().maximize();
     }
     @Test
-    public void PapkaTest(){
+    public void Korzina(){
         WebElement search = driver.findElement(By.name("q"));
         search.sendKeys("yandex.ru почта" + Keys.ENTER);
         WebElement Vxod = driver.findElement(By.xpath("//*[@class='LC20lb MBeuO DKV0Md']"));
@@ -60,7 +59,7 @@ public class SeleniumTestEx2 {
         Komy.sendKeys("gimitrygimotrov@yandex.ru"+Keys.ENTER);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
         WebElement Tema = driver.findElement(By.xpath("//*[@name='subject']"));
-        Tema.sendKeys("HomeworkТест");
+        Tema.sendKeys("Homework");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
         WebElement Letter = driver.findElement(By.xpath("//*[@title='Напишите что-нибудь']"));
         Letter.sendKeys("Selenium Homework3");
@@ -68,43 +67,20 @@ public class SeleniumTestEx2 {
         WebElement Otprav = driver.findElement(By.xpath("//*[@class='Button2 Button2_pin_circle-circle Button2_view_default Button2_size_l']"));
         Otprav.click();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
-        WebElement OtpravLetter = driver.findElement(By.xpath("//a[@href='#sent']"));
-        OtpravLetter.click();
+        WebElement Vxodashie = driver.findElement(By.xpath("//*[@href='#tabs/relevant']"));
+        Vxodashie.click();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
-        WebElement Reload = driver.findElement(By.xpath("//button[contains(@class,'qa-LeftColumn-SyncButton')]"));
+        WebElement Reload = driver.findElement(By.xpath("//*[contains(@class,'Layout-m__sync--1YGpp')]"));
         Reload.click();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
-        assertTrue(driver.findElement(By.xpath("//*[@title='HomeworkТест']")).isDisplayed());
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
-        WebElement Papki = driver.findElement(By.xpath("//*[contains(@class,'qa-LeftColumn-FolderExpander')]"));
-        Papki.click();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
-        WebElement PapkaTest = driver.findElement(By.xpath("//*[@href='#folder/8']"));
-        PapkaTest.click();
-        //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
-        //Reload.click();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
-        assertTrue(driver.findElement(By.xpath("//*[contains(@class,'mail-MessageSnippet-Item')]")).isDisplayed());
+        assertTrue(driver.findElement(By.xpath("//*[@class='mail-MessageSnippet-Item_dateText']")).isDisplayed());
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
         assertTrue(driver.findElement(By.xpath("//*[text()='Gimitry Gimotrov']")).isDisplayed());
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
-        assertTrue(driver.findElement(By.xpath("//*[@title='HomeworkТест']")).isDisplayed());
+        assertTrue(driver.findElement(By.xpath("//*[@title='Homework']")).isDisplayed());
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
         assertTrue(driver.findElement(By.xpath("//*[text()='Selenium Homework3']")).isDisplayed());
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
-        WebElement Icon = driver.findElement(By.xpath("//img[@class='user-pic__image']"));
-        Icon.click();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
-        WebElement Vixod = driver.findElement(By.xpath("//*[contains(@class,'legouser__menu-item_action_exit')]"));
-        Vixod.click();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
-        assertTrue(driver.findElement(By.xpath("//*[@id='passp:sign-in']")).isDisplayed());
-
-
-
-
-
-
 
 
     }
