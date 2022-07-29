@@ -96,7 +96,7 @@ public class BaseSeleniumTestEx1 {
         WebElement Icon = driver.findElement(By.xpath("//img[@class='user-pic__image']"));
         Icon.click();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
-        WebElement Vixod = driver.findElement(By.xpath("//*[contains(@class,'legouser__menu-item_action_exit')]"));
+        WebElement Vixod = driver.findElement(By.xpath("//*[@class='legouser__menu-item_action_exit']"));
         Vixod.click();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
         assertTrue(driver.findElement(By.xpath("//*[@id='passp:sign-in']")).isDisplayed());

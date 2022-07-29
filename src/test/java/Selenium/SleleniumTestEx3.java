@@ -6,6 +6,8 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
@@ -81,6 +83,33 @@ public class SleleniumTestEx3 {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
         assertTrue(driver.findElement(By.xpath("//*[text()='Selenium Homework3']")).isDisplayed());
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
+        WebElement Galka = driver.findElement(By.xpath("//*[contains(@class,'_nb-checkbox-normal-flag')]"));
+        Galka.click();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
+        WebElement Delete = driver.findElement(By.xpath("//*[contains(@title,'Удалить')]"));
+        Delete.click();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
+        WebElement Korzina = driver.findElement(By.xpath("//*[@href='#trash']"));
+        Korzina.click();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
+        assertTrue(driver.findElement(By.xpath("//*[contains(text(),'Письма из этой папки автоматически удаляются')]")).isDisplayed());
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
+        Reload.click();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
+        WebElement Icon = driver.findElement(By.xpath("//img[@class='user-pic__image']"));
+        Icon.click();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
+        WebElement Vixod = driver.findElement(By.xpath("//*[contains(@class,'legouser__menu-item_action_exit')]"));
+        Vixod.click();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
+        assertTrue(driver.findElement(By.xpath("//*[@id='passp:sign-in']")).isDisplayed());
+
+
+
+
+
+
+
 
 
     }

@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="892f0350-9646-4111-8552-61f7f7b730ab" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Selenium/SleleniumTestEx3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Selenium/BaseSeleniumTestEx1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Selenium/BaseSeleniumTestEx1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Selenium/SeleniumTestEx2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Selenium/SeleniumTestEx2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Selenium/SleleniumTestEx3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Selenium/SleleniumTestEx3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,24 +61,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BaseSeleniumTestEx1.PochtaTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="HomewotkColculator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Selenium.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Selenium" />
-      <option name="MAIN_CLASS_NAME" value="Selenium.BaseSeleniumTestEx1" />
-      <option name="METHOD_NAME" value="PochtaTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="BaseSeleniumTestEx1.searchBoxPochta" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="HomewotkColculator" />
       <extension name="coverage">
@@ -114,6 +97,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SleleniumTestEx3" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="HomewotkColculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Selenium.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Selenium" />
+      <option name="MAIN_CLASS_NAME" value="Selenium.SleleniumTestEx3" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SleleniumTestEx3.Korzina" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="HomewotkColculator" />
       <extension name="coverage">
@@ -135,10 +135,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.SleleniumTestEx3.Korzina" />
-        <item itemvalue="TestNG.SeleniumTestEx2.PapkaTest" />
         <item itemvalue="TestNG.BaseSeleniumTestEx1.searchBoxPochta" />
+        <item itemvalue="TestNG.SleleniumTestEx3" />
+        <item itemvalue="TestNG.SeleniumTestEx2.PapkaTest" />
         <item itemvalue="TestNG.BaseSeleniumTestEx1" />
-        <item itemvalue="TestNG.BaseSeleniumTestEx1.PochtaTest" />
       </list>
     </recent_temporary>
   </component>
