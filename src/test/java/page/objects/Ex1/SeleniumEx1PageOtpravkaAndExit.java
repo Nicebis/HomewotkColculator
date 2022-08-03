@@ -1,4 +1,4 @@
-package page.objects;
+package page.objects.Ex1;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -39,5 +39,8 @@ public class SeleniumEx1PageOtpravkaAndExit {
     public void Exit(){
         wait.until(ExpectedConditions.visibilityOf(IconVixod)).click();
         wait.until(ExpectedConditions.visibilityOf(Vixod)).click();
+    }
+    public void LetterSent(){
+        wait.until(ExpectedConditions.visibilityOf(Otpravka)).click();
     }
 }

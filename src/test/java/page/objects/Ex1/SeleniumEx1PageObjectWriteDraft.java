@@ -1,4 +1,4 @@
-package page.objects;
+package page.objects.Ex1;
 
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;

@@ -1,15 +1,17 @@
-package page.objects;
+package page.objects.Ex1;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
+import page.objects.BaseSeleniumTestHooks;
+import page.objects.Ex1.SeleniumEx1PageObjectVxod;
+import page.objects.Ex1.SeleniumEx1PageObjectWriteDraft;
+import page.objects.Ex1.SeleniumEx1PageOtpravkaAndExit;
+import page.objects.Ex1.SeleniumEx1PageProverki;
 
-import java.time.Duration;
-
+import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
-public class SeleniumEx1Test extends BaseSeleniumTestHooks{
+public class SeleniumEx1Test extends BaseSeleniumTestHooks {
     @Test
     public void searchBoxPochta() {
         SeleniumEx1PageObjectVxod PochtaTest = new SeleniumEx1PageObjectVxod(driver);
@@ -63,10 +65,11 @@ public class SeleniumEx1Test extends BaseSeleniumTestHooks{
         //Letter2.click();
         //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
         Draft.Drafts();
-        assertTrue(driver.findElement(By.xpath("//*[@id='recipient-1']")).isDisplayed());
-        assertTrue(driver.findElement(By.xpath("//*[text()='hmlnyryr@yandex.ru']")).isDisplayed());
-        assertTrue(driver.findElement(By.xpath("//*[@title='Homework']")).isDisplayed());
-        assertTrue(driver.findElement(By.xpath("//*[text()='Selenium Homework3']")).isDisplayed());
+        SeleniumEx1PageProverki Proverka = new SeleniumEx1PageProverki(driver);
+        //assertTrue(driver.findElement(By.xpath("//*[@id='recipient-1']")).isDisplayed());
+        //assertTrue(driver.findElement(By.xpath("//*[text()='hmlnyryr@yandex.ru']")).isDisplayed());
+        //ssertTrue(driver.findElement(By.xpath("//*[@title='Homework']")).isDisplayed());
+        //assertTrue(driver.findElement(By.xpath("//*[text()='Selenium Homework3']")).isDisplayed());
         //WebElement LetterVxod = driver.findElement(By.xpath("//*[@class='mail-MessageSnippet-Item mail-MessageSnippet-Item_sender js-message-snippet-sender']"));
         //LetterVxod.click();
         //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
@@ -77,7 +80,8 @@ public class SeleniumEx1Test extends BaseSeleniumTestHooks{
         //WebElement Vhodashi = driver.findElement(By.xpath("//*[@href='#inbox']"));
         //Vhodashi.click();
         //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
-        assertTrue(driver.findElement(By.xpath("//*[text()='В папке «Черновики» нет писем']")).isDisplayed());
+        assertEquals(Proverka.NotDrafts(),"В папке «Черновики» нет писем");
+        //assertTrue(driver.findElement(By.xpath("//*[text()='В папке «Черновики» нет писем']")).isDisplayed());
         //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
         //WebElement OtpravLetter = driver.findElement(By.xpath("//a[@href='#sent']"));
         //OtpravLetter.click();
