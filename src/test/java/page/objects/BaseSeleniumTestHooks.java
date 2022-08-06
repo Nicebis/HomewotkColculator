@@ -1,5 +1,6 @@
 package page.objects;
 
+import StepMethod.StepMethod;
 import com.github.javafaker.Faker;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -16,11 +17,12 @@ public class BaseSeleniumTestHooks {
     protected static final Faker FAKER = new Faker();
 
     protected WebDriverWait wait;
+    protected StepMethod steps;
+
 
     @BeforeSuite
     public void beforeSuite() {
         WebDriverManager.chromedriver().setup();
-
     }
 
     @BeforeMethod
@@ -28,6 +30,8 @@ public class BaseSeleniumTestHooks {
         driver = new ChromeDriver();
         driver.navigate().to(GOOGLE_URL);
         driver.manage().window().maximize();
+        steps = new StepMethod(driver);
+
     }
     @AfterMethod
     public void tearDown() {

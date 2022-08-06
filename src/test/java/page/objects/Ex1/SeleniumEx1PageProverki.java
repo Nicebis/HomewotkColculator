@@ -51,5 +51,14 @@ public class SeleniumEx1PageProverki {
     public String NotDrafts(){
         return wait.until(ExpectedConditions.visibilityOf(DraftsOut)).getText();
     }
+    public void AdresatProverka(){
+        wait.until(ExpectedConditions.visibilityOf(email));
+    }
+    public void TemaProverka(){
+        wait.until(ExpectedConditions.visibilityOf(Thema));
+    }
+    public void TextProverka(){
+        wait.until(ExpectedConditions.visibilityOf(Text));
+    }
 
 }

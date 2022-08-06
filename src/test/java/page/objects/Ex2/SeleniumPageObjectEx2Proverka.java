@@ -14,6 +14,14 @@ public class SeleniumPageObjectEx2Proverka {
     protected static final String GOOGLE_URL = "https://google.com";
     protected WebDriver driver;
     private WebDriverWait wait;
+    @FindBy(xpath = "//*[text()='В папке «Черновики» нет писем']")
+    private WebElement DraftsOut;
+    @FindBy(xpath="//*[text()='hmlnyryr@yandex.ru']")
+    private WebElement email;
+    @FindBy(xpath = "//*[@title='Homework']")
+    private WebElement Tema;
+    @FindBy(xpath = "//*[text()='Selenium Homework3']")
+    private WebElement Text;
     @FindBy(xpath = "//*[@title='HomeworkТест']")
     private WebElement SentLetter;
     @FindBy(xpath = "//*[contains(@class,'mail-MessageSnippet-Item')]")
@@ -50,6 +58,13 @@ public class SeleniumPageObjectEx2Proverka {
     public String TrashFolder(){
         return wait.until(ExpectedConditions.visibilityOf(TrashFind)).getText();
     }
+    public String TestAdresat(){return wait.until(ExpectedConditions.visibilityOf(email)).getText(); }
+    public String TestTema(){return wait.until(ExpectedConditions.visibilityOf(Tema)).getText(); }
+    public String TestText(){return wait.until(ExpectedConditions.visibilityOf(Text)).getText(); }
+    public String DraftOut(){
+        return wait.until(ExpectedConditions.visibilityOf(DraftsOut)).getText();
+    }
+
 
 
 }

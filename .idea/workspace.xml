@@ -5,12 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="892f0350-9646-4111-8552-61f7f7b730ab" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/page/objects/Ex2/SeleniumPageObjectEx2Elements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/page/objects/Ex3/SeleniumPageObjectEx3Elements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/page/objects/Ex3/SeleniumTestEx3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/StepMethod/SeleniumTestEx2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/StepMethod/SeleniumTetsEx1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/StepMethod/StepMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/StepMethod/StepMethod2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/page/objects/BaseSeleniumTestHooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/page/objects/BaseSeleniumTestHooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/page/objects/Ex1/SeleniumEx1PageProverki.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/page/objects/Ex1/SeleniumEx1PageProverki.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/page/objects/Ex2/SeleniumPageObjectEx2Proverka.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/page/objects/Ex2/SeleniumPageObjectEx2Proverka.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/page/objects/Ex2/SeleniumTestEx2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/page/objects/Ex2/SeleniumTestEx2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,25 +47,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;org.infernus.idea.checkstyle.CheckStyleConfigurable&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.SeleniumTestEx3.Korzina">
-    <configuration name="BaseSeleniumTestEx1.searchBoxPochta" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="HomewotkColculator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Selenium.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Selenium" />
-      <option name="MAIN_CLASS_NAME" value="Selenium.BaseSeleniumTestEx1" />
-      <option name="METHOD_NAME" value="searchBoxPochta" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.SeleniumTetsEx1.SeleniumTestStep">
     <configuration name="SeleniumEx1Test.searchBoxPochta" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="HomewotkColculator" />
       <extension name="coverage">
@@ -118,6 +102,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SeleniumTetsEx1.SeleniumTestStep" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="HomewotkColculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="StepMethod.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="StepMethod" />
+      <option name="MAIN_CLASS_NAME" value="StepMethod.SeleniumTetsEx1" />
+      <option name="METHOD_NAME" value="SeleniumTestStep" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SleleniumTestEx3.Korzina" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="HomewotkColculator" />
       <extension name="coverage">
@@ -138,11 +140,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.SeleniumTetsEx1.SeleniumTestStep" />
         <item itemvalue="TestNG.SeleniumTestEx3.Korzina" />
         <item itemvalue="TestNG.SeleniumEx1Test.searchBoxPochta" />
         <item itemvalue="TestNG.SeleniumTestEx2.PapkaTest (1)" />
         <item itemvalue="TestNG.SleleniumTestEx3.Korzina" />
-        <item itemvalue="TestNG.BaseSeleniumTestEx1.searchBoxPochta" />
       </list>
     </recent_temporary>
   </component>
@@ -207,6 +209,11 @@
           <url>file://$PROJECT_DIR$/src/test/java/Selenium/SeleniumTestEx2.java</url>
           <line>25</line>
           <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/StepMethod/SeleniumTetsEx1.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
