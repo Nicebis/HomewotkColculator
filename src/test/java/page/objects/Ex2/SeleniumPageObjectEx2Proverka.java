@@ -18,6 +18,8 @@ public class SeleniumPageObjectEx2Proverka {
     private WebElement DraftsOut;
     @FindBy(xpath="//*[text()='hmlnyryr@yandex.ru']")
     private WebElement email;
+    @FindBy(xpath="//*[text()='Gimitry Gimotrov']")
+    private WebElement email2;
     @FindBy(xpath = "//*[@title='Homework']")
     private WebElement Tema;
     @FindBy(xpath = "//*[text()='Selenium Homework3']")
@@ -36,6 +38,8 @@ public class SeleniumPageObjectEx2Proverka {
     private WebElement TextLetter;
     @FindBy(xpath="//*[contains(text(),'Письма из этой папки автоматически удаляются')]")
     private WebElement TrashFind;
+    @FindBy(xpath = "//*[@class='mail-MessageSnippet-Item_dateText']")
+    private WebElement Pismo;
     //@FindBy(xpath="//*[@class='mail-MessageSnippet-Item_dateText']")
     //private WebElement LetterHave;
     public SeleniumPageObjectEx2Proverka (WebDriver driver) {
@@ -58,11 +62,16 @@ public class SeleniumPageObjectEx2Proverka {
     public String TrashFolder(){
         return wait.until(ExpectedConditions.visibilityOf(TrashFind)).getText();
     }
-    public String TestAdresat(){return wait.until(ExpectedConditions.visibilityOf(email)).getText(); }
+    public String TestAdresat(){return wait.until(ExpectedConditions.visibilityOf(email)).getText();}
+    public String TestAdresat2(){return wait.until(ExpectedConditions.visibilityOf(email2)).getText();}
     public String TestTema(){return wait.until(ExpectedConditions.visibilityOf(Tema)).getText(); }
+    public String TestTema2(){return wait.until(ExpectedConditions.visibilityOf(Thema2)).getText(); }
     public String TestText(){return wait.until(ExpectedConditions.visibilityOf(Text)).getText(); }
     public String DraftOut(){
         return wait.until(ExpectedConditions.visibilityOf(DraftsOut)).getText();
+    }
+    public String KorzinaText(){
+        return wait.until(ExpectedConditions.visibilityOf(TrashFind)).getText();
     }
 
 

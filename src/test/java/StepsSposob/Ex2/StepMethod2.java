@@ -1,4 +1,4 @@
-package StepMethod;
+package StepsSposob.Ex2;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -19,6 +19,7 @@ public class StepMethod2 {
     private SeleniumPageObjectEx2Elements Elements;
     private SeleniumPageObjectEx2Proverka Proverka;
     private SeleniumEx1PageObjectWriteDraft Letter;
+    private SeleniumEx1PageProverki Proverka2;
     public StepMethod2(WebDriver driver){
         this.driver=driver;
         this.Vxod= new SeleniumEx1PageObjectVxod(driver);
@@ -26,6 +27,7 @@ public class StepMethod2 {
         this.Proverka = new SeleniumPageObjectEx2Proverka(driver);
         this.Sent = new SeleniumEx1PageOtpravkaAndExit(driver);
         this.Letter = new SeleniumEx1PageObjectWriteDraft(driver);
+        this.Proverka2 = new SeleniumEx1PageProverki(driver);
     }
     public void VxodVAkk(final String email,final String password,final String poisk){
         Vxod.VxodAkkaunt(poisk);
@@ -36,15 +38,18 @@ public class StepMethod2 {
     public void SentLetter(final String adresat,final String LetterTema,final String LetterText){
         Letter.Write();
         Letter.Letter(adresat, LetterTema, LetterText);
-        Letter.Drafts();
+        Sent.LetterSent();
         Sent.ProverkaSentLetter();
-        Assert.assertEquals(Proverka.TestTema(),LetterTema);
+        Assert.assertEquals(Proverka.TestTema2(),LetterTema);
     }
     public void FolderTest(final String adresat,final String LetterTema,final String LetterText){
         Elements.FolderTest();
         assertTrue(driver.findElement(By.xpath("//*[contains(@class,'mail-MessageSnippet-Item')]")).isDisplayed());
         Assert.assertEquals(Proverka.TestAdresat(),adresat);
-        Assert.assertEquals(Proverka.TestTema(),LetterTema);
+        Assert.assertEquals(Proverka.TestTema2(),LetterTema);
         Assert.assertEquals(Proverka.TestText(),LetterText);
+        Sent.Exit();
+        Proverka2.ExitPassword();
+
     }
 }

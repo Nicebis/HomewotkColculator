@@ -1,4 +1,4 @@
-package StepMethod;
+package StepsSposob.Ex1;
 
 import org.testng.annotations.Test;
 import page.objects.BaseSeleniumTestHooks;
