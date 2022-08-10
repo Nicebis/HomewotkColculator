@@ -5,16 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="892f0350-9646-4111-8552-61f7f7b730ab" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/StepsSposob/Ex2/SeleniumTestEx2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/StepsSposob/Ex3/SeleniumTestEx3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/StepsSposob/Ex3/StepMethod3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/APIhomework/APItest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StepMethod/SeleniumTestEx2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StepMethod/SeleniumTetsEx1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepsSposob/Ex1/SeleniumTetsEx1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StepMethod/StepMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepsSposob/Ex1/StepMethod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StepMethod/StepMethod2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepsSposob/Ex2/StepMethod2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/page/objects/BaseSeleniumTestHooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/page/objects/BaseSeleniumTestHooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/page/objects/Ex2/SeleniumPageObjectEx2Proverka.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/page/objects/Ex2/SeleniumPageObjectEx2Proverka.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,18 +42,18 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;org.infernus.idea.checkstyle.CheckStyleConfigurable&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.SeleniumTestEx3.SeleniumStepEx3">
-    <configuration name="SeleniumEx1Test.searchBoxPochta" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.APItest.getUsersAllTest">
+    <configuration name="APItest.getUsersAllTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="HomewotkColculator" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="page.objects.Ex1.*" />
+          <option name="PATTERN" value="APIhomework.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="page.objects" />
-      <option name="MAIN_CLASS_NAME" value="page.objects.Ex1.SeleniumEx1Test" />
-      <option name="METHOD_NAME" value="searchBoxPochta" />
+      <option name="PACKAGE_NAME" value="APIhomework" />
+      <option name="MAIN_CLASS_NAME" value="APIhomework.APItest" />
+      <option name="METHOD_NAME" value="getUsersAllTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -142,11 +135,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.APItest.getUsersAllTest" />
         <item itemvalue="TestNG.SeleniumTestEx3.SeleniumStepEx3" />
         <item itemvalue="TestNG.SeleniumTestEx2.SeleniumStepsEx2" />
         <item itemvalue="TestNG.SeleniumTetsEx1.SeleniumTestStep" />
         <item itemvalue="TestNG.SeleniumTestEx3.Korzina" />
-        <item itemvalue="TestNG.SeleniumEx1Test.searchBoxPochta" />
       </list>
     </recent_temporary>
   </component>
