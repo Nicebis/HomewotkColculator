@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="892f0350-9646-4111-8552-61f7f7b730ab" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/APIhomework/APItest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/APIhomework/APItest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/APIhomework/APItest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +42,79 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;org.infernus.idea.checkstyle.CheckStyleConfigurable&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.APItest.getUsersAllTest">
+  <component name="RunManager" selected="TestNG.APItest.GetAllPostTest">
+    <configuration name="APItest.CreateUsers" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="HomewotkColculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="APIhomework.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="APIhomework" />
+      <option name="MAIN_CLASS_NAME" value="APIhomework.APItest" />
+      <option name="METHOD_NAME" value="CreateUsers" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="APItest.DeleteRandomUser" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="HomewotkColculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="APIhomework.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="APIhomework" />
+      <option name="MAIN_CLASS_NAME" value="APIhomework.APItest" />
+      <option name="METHOD_NAME" value="DeleteRandomUser" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="APItest.GetAllPostTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="HomewotkColculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="APIhomework.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="APIhomework" />
+      <option name="MAIN_CLASS_NAME" value="APIhomework.APItest" />
+      <option name="METHOD_NAME" value="GetAllPostTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="APItest.GetRandomUserTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="HomewotkColculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="APIhomework.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="APIhomework" />
+      <option name="MAIN_CLASS_NAME" value="APIhomework.APItest" />
+      <option name="METHOD_NAME" value="GetRandomUserTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="APItest.getUsersAllTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="HomewotkColculator" />
       <extension name="coverage">
@@ -61,85 +133,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SeleniumTestEx2.SeleniumStepsEx2" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="HomewotkColculator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="StepsSposob.Ex1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="StepsSposob" />
-      <option name="MAIN_CLASS_NAME" value="StepsSposob.Ex2.SeleniumTestEx2" />
-      <option name="METHOD_NAME" value="SeleniumStepsEx2" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SeleniumTestEx3.Korzina" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="HomewotkColculator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="page.objects.Ex3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="page.objects.Ex3" />
-      <option name="MAIN_CLASS_NAME" value="page.objects.Ex3.SeleniumTestEx3" />
-      <option name="METHOD_NAME" value="Korzina" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SeleniumTestEx3.SeleniumStepEx3" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="HomewotkColculator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="StepsSposob.Ex3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="StepsSposob.Ex3" />
-      <option name="MAIN_CLASS_NAME" value="StepsSposob.Ex3.SeleniumTestEx3" />
-      <option name="METHOD_NAME" value="SeleniumStepEx3" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SeleniumTetsEx1.SeleniumTestStep" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="HomewotkColculator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="StepsSposob.Ex1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="StepMethod" />
-      <option name="MAIN_CLASS_NAME" value="StepsSposob.Ex1.SeleniumTetsEx1" />
-      <option name="METHOD_NAME" value="SeleniumTestStep" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.APItest.GetAllPostTest" />
+        <item itemvalue="TestNG.APItest.DeleteRandomUser" />
+        <item itemvalue="TestNG.APItest.GetRandomUserTest" />
+        <item itemvalue="TestNG.APItest.CreateUsers" />
         <item itemvalue="TestNG.APItest.getUsersAllTest" />
-        <item itemvalue="TestNG.SeleniumTestEx3.SeleniumStepEx3" />
-        <item itemvalue="TestNG.SeleniumTestEx2.SeleniumStepsEx2" />
-        <item itemvalue="TestNG.SeleniumTetsEx1.SeleniumTestStep" />
-        <item itemvalue="TestNG.SeleniumTestEx3.Korzina" />
       </list>
     </recent_temporary>
   </component>

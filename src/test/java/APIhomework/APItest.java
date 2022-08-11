@@ -30,17 +30,21 @@ public class APItest {
 
     @BeforeSuite
     public void beforeSuite() {
+
         requestSpecification = new RequestSpecBuilder()
                 .log(LogDetail.ALL)
                 .setContentType(ContentType.JSON)
                 .build()
-                .header(new Header("Authorization", "Bearer cb6f89467475aa6aacf1ff422f0bc147098caef74fc6e1651300580f299fb9d1"));
+                .header(new Header("Authorization",
+                        "Bearer cb6f89467475aa6aacf1ff422f0bc147098caef74fc6e1651300580f299fb9d1"));
+
         responseSpecification = new ResponseSpecBuilder()
                 .log(LogDetail.ALL)
                 .build();
+
         RestAssured.baseURI = Base_URL;
-        RestAssured.responseSpecification = responseSpecification;
         RestAssured.requestSpecification = requestSpecification;
+        RestAssured.responseSpecification = responseSpecification;
     }
 
     @Test
@@ -62,28 +66,74 @@ public class APItest {
     }
 
     @Test
-    void CreateUsers() {
-        var faker = new Faker;
-        var newName = faker.name().bloodGroup();
+    void CreateUserTest() {
+        var faker = new Faker();
+        var newName = faker.name().fullName();
         var newGender = faker.demographic().sex();
         var newEmail = faker.internet().emailAddress();
         var random = new SecureRandom();
-        var StatusList = Arrays.asList("active", "inactive");
-        var newRandomStatus = StatusList.get(random.nextInt(StatusList.size()));
-        //.name(newName)
-        //.gender(newGender)
-        //.email(newEmail)
-        //.status(newRandomStatus)
-        //.build();
+        var statusList = Arrays.asList("active", "inactive");
+        var newRandomStatus = statusList.get(random.nextInt(statusList.size()));
+        //var personRequest = Create.builder()
+                //.name(newName)
+               // .gender(newGender)
+                //.email(newEmail)
+                //.status(newRandomStatus)
+                //.build();
         given()
-                .body()
-             .when()
+                .when()
                 .post(Users)
                 .then()
                 .statusCode(200)
                 .body("data.id", Matchers.not(Matchers.emptyOrNullString()))
                 .body("data.name", Matchers.equalTo(newName))
+                .body("data.email", Matchers.equalTo(newEmail))
                 .body("data.gender", Matchers.equalTo(newGender))
                 .body("data.status", Matchers.equalTo(newRandomStatus));
+    }
+    @Test
+    void GetRandomUserTest(){
+        var randomId = new Random().nextInt(3800);
+        given()
+                .contentType(ContentType.JSON)
+                .when()
+                .get(Users+"/"+randomId)
+                .then()
+                .statusCode(200)
+                .body("data.id",Matchers.equalTo(randomId))
+                .body("data.name", Matchers.not(Matchers.emptyOrNullString()))
+                .body("data.email", Matchers.not(Matchers.emptyOrNullString()))
+                .body("data.gender", Matchers.not(Matchers.emptyOrNullString()))
+                .body("data.status", Matchers.not(Matchers.emptyOrNullString()));
+    }
+    @Test
+    void DeleteRandomUser(){
+        var randomId = new Random().nextInt(3800);
+        given()
+                .contentType(ContentType.JSON)
+                .when()
+                .delete(Users+"/"+randomId)
+                .then()
+                .statusCode(200)
+                .body("code", Matchers.equalTo(204))
+                .body("meta", Matchers.equalTo(null))
+                .body("data", Matchers.equalTo(null));
+    }
+    @Test
+    void GetAllPostTest(){
+        given()
+                .contentType(ContentType.JSON)
+                .when()
+                .get(Post)
+                .then()
+                .statusCode(200)
+                .body("code", Matchers.equalTo(200))
+                .body("meta.pagination.page", Matchers.equalTo(1))
+                .body("meta.pagination.limit", Matchers.equalTo(10))
+                .body("data.id", Matchers.not(Matchers.emptyOrNullString()))
+                .body("data.name", Matchers.not(Matchers.emptyOrNullString()))
+                .body("data.email", Matchers.not(Matchers.emptyOrNullString()))
+                .body("data.gender", Matchers.not(Matchers.emptyOrNullString()))
+                .body("data.status", Matchers.not(Matchers.emptyOrNullString()));
     }
 }
