@@ -1,6 +1,7 @@
 package APIhomework;
 
 import com.github.javafaker.Faker;
+import com.google.common.collect.ImmutableBiMap;
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
@@ -15,6 +16,7 @@ import org.testng.annotations.Test;
 
 import java.security.SecureRandom;
 import java.util.Arrays;
+import java.util.Locale;
 import java.util.Random;
 
 import static io.restassured.RestAssured.given;
@@ -69,18 +71,19 @@ public class APItest {
     void CreateUserTest() {
         var faker = new Faker();
         var newName = faker.name().fullName();
-        var newGender = faker.demographic().sex();
+        var newGender = "female";
         var newEmail = faker.internet().emailAddress();
         var random = new SecureRandom();
         var statusList = Arrays.asList("active", "inactive");
         var newRandomStatus = statusList.get(random.nextInt(statusList.size()));
-        //var personRequest = Create.builder()
-                //.name(newName)
-               // .gender(newGender)
-                //.email(newEmail)
-                //.status(newRandomStatus)
-                //.build();
+        var personRequest = CreateUsersRequestData.builder()
+                .name(newName)
+                .gender(newGender)
+                .email(newEmail)
+                .status(newRandomStatus)
+                .build();
         given()
+                .body(personRequest)
                 .when()
                 .post(Users)
                 .then()
@@ -120,6 +123,34 @@ public class APItest {
                 .body("data", Matchers.equalTo(null));
     }
     @Test
+    void UpdateUserTest(){
+        var randomId = new Random().nextInt(3800);
+        var faker = new Faker();
+        var updateName = faker.name().fullName();
+        var updateEmail=faker.internet().emailAddress();
+        var updateGender = faker.demographic().sex().toLowerCase(Locale.ROOT);
+        var Random = new SecureRandom();
+        var statusList = Arrays.asList("active", "inactive");
+        var UpdateRandomStatus = statusList.get(Random.nextInt(statusList.size()));
+        var person = CreateUsersRequestData.builder()
+                .name(updateName)
+                .gender(updateGender)
+                .status(UpdateRandomStatus)
+                .email(updateEmail)
+                .build();
+        given()
+                .body(person)
+                .when()
+                .put(Users+"/"+randomId)
+                .then()
+                .statusCode(200)
+                .body("data.name",Matchers.equalTo(updateName))
+                .body("data.email",Matchers.equalTo(updateEmail))
+                .body("data.gender",Matchers.equalTo(updateGender))
+                .body("data.id",Matchers.equalTo(randomId))
+                .body("data.status",Matchers.equalTo(UpdateRandomStatus));
+    }
+    @Test
     void GetAllPostTest(){
         given()
                 .contentType(ContentType.JSON)
@@ -136,4 +167,20 @@ public class APItest {
                 .body("data.gender", Matchers.not(Matchers.emptyOrNullString()))
                 .body("data.status", Matchers.not(Matchers.emptyOrNullString()));
     }
+    @Test
+    void GetPostRandom(){
+        var randomId = new Random().nextInt(1800);
+        given()
+                .contentType(ContentType.JSON)
+                .when()
+                .get(Post+"/"+randomId)
+                .then()
+                .statusCode(200)
+                .body("data.id",Matchers.equalTo(randomId))
+                .body("data.user_id",Matchers.not(Matchers.emptyOrNullString()))
+                .body("data.title",Matchers.not(Matchers.emptyOrNullString()))
+                .body("data.body",Matchers.not(Matchers.emptyOrNullString()));
+    }
+
+
 }
