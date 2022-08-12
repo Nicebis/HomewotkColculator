@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="892f0350-9646-4111-8552-61f7f7b730ab" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/APIhomework/CreateUsersRequestData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/APIhomework/CreatePostsRequestData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/APIhomework/APItest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/APIhomework/APItest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +42,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;org.infernus.idea.checkstyle.CheckStyleConfigurable&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.APItest.UpdateUserTest">
+  <component name="RunManager" selected="TestNG.APItest.UpdateRandomPostTest">
     <configuration name="APItest.CreateUserTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="HomewotkColculator" />
       <extension name="coverage">
@@ -62,7 +61,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="APItest.DeleteRandomUser" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="APItest.DeleteRandomPost" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="HomewotkColculator" />
       <extension name="coverage">
         <pattern>
@@ -72,25 +71,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="APIhomework" />
       <option name="MAIN_CLASS_NAME" value="APIhomework.APItest" />
-      <option name="METHOD_NAME" value="DeleteRandomUser" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="APItest.GetAllPostTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="HomewotkColculator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="APIhomework.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="APIhomework" />
-      <option name="MAIN_CLASS_NAME" value="APIhomework.APItest" />
-      <option name="METHOD_NAME" value="GetAllPostTest" />
+      <option name="METHOD_NAME" value="DeleteRandomPost" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -109,6 +90,24 @@
       <option name="PACKAGE_NAME" value="APIhomework" />
       <option name="MAIN_CLASS_NAME" value="APIhomework.APItest" />
       <option name="METHOD_NAME" value="GetPostRandom" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="APItest.UpdateRandomPostTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="HomewotkColculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="APIhomework.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="APIhomework" />
+      <option name="MAIN_CLASS_NAME" value="APIhomework.APItest" />
+      <option name="METHOD_NAME" value="UpdateRandomPostTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -136,11 +135,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.APItest.UpdateRandomPostTest" />
+        <item itemvalue="TestNG.APItest.DeleteRandomPost" />
         <item itemvalue="TestNG.APItest.UpdateUserTest" />
         <item itemvalue="TestNG.APItest.CreateUserTest" />
         <item itemvalue="TestNG.APItest.GetPostRandom" />
-        <item itemvalue="TestNG.APItest.GetAllPostTest" />
-        <item itemvalue="TestNG.APItest.DeleteRandomUser" />
       </list>
     </recent_temporary>
   </component>

@@ -181,6 +181,42 @@ public class APItest {
                 .body("data.title",Matchers.not(Matchers.emptyOrNullString()))
                 .body("data.body",Matchers.not(Matchers.emptyOrNullString()));
     }
+    @Test
+    void DeleteRandomPost(){
+        var randomId = new Random().nextInt(900);
+        given()
+                .when()
+                .delete(Post+"/"+randomId)
+                .then()
+                .statusCode(200)
+                .body("code", Matchers.equalTo(204))
+                .body("meta", Matchers.equalTo(null))
+                .body("data", Matchers.equalTo(null));
+    }
+    @Test
+    void UpdateRandomPostTest(){
+        var randomUserId = new Random().nextInt(1800);
+        var faker = new Faker();
+        var newUserId = new Random().nextInt(3800);
+        var updateTitle = faker.book().title();
+        var updateBody = faker.harryPotter().quote();
+        var updatePostRequest = CreatePostsRequestData.builder()
+                        .body(updateBody)
+                        .title(updateTitle)
+                        .userId(newUserId)
+                        .build();
+        given()
+                .body(updatePostRequest)
+                .when()
+                .put(Post+"/"+randomUserId)
+                .then()
+                .statusCode(200)
+                .body("data.id",Matchers.equalTo(randomUserId))
+                .body("data.user_id",Matchers.equalTo(newUserId))
+                .body("data.title",Matchers.equalTo(updateTitle))
+                .body("data.body",Matchers.equalTo(updateBody));
+
+    }
 
 
 }
