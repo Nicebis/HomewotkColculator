@@ -215,6 +215,104 @@ public class APItest {
                 .body("data.user_id",Matchers.equalTo(newUserId))
                 .body("data.title",Matchers.equalTo(updateTitle))
                 .body("data.body",Matchers.equalTo(updateBody));
+    }
+    @Test
+    void CreatePostTest(){
+        var faker = new Faker();
+        var newUserId = new Random().nextInt(3800);
+        var newtTitle = faker.shakespeare().asYouLikeItQuote();
+        var newBody = faker.chuckNorris().fact();
+        var newPost = CreatePostsRequestData.builder()
+                        .userId(newUserId)
+                        .title(newtTitle)
+                        .body(newBody)
+                        .build();
+        given()
+                .body(newPost)
+                .when()
+                .post(Post)
+                .then()
+                .statusCode(200)
+                .body("data.id",Matchers.not(Matchers.emptyOrNullString()))
+                .body("data.user_id",Matchers.equalTo(newUserId))
+                .body("data.title",Matchers.equalTo(newtTitle))
+                .body("data.body",Matchers.equalTo(newBody));
+    }
+    @Test
+    void getAllComments(){
+        given()
+                .contentType(ContentType.JSON)
+                .when()
+                .get(Comments)
+                .then()
+                .statusCode(200)
+                .body("code",Matchers.equalTo(200))
+                .body("meta.pagination.page",Matchers.equalTo(1))
+                .body("meta.pagination.limit",Matchers.equalTo(10))
+                .body("data.id",Matchers.not(Matchers.emptyOrNullString()))
+                .body("data.post_id",Matchers.not(Matchers.emptyOrNullString()))
+                .body("data.name",Matchers.not(Matchers.emptyOrNullString()))
+                .body("data.email",Matchers.not(Matchers.emptyOrNullString()))
+                .body("data.body",Matchers.not(Matchers.emptyOrNullString()));
+    }
+    @Test
+    void CreateCommentTest(){
+        var faker = new Faker();
+        var newPostId = new Random().nextInt(1800);
+        var newBody = faker.chuckNorris().fact();
+        var newName = faker.name().firstName();
+        var newEmail = faker.internet().emailAddress();
+        var newComment = CreateCommentsRequestData.builder()
+                .body(newBody)
+                .name(newName)
+                .email(newEmail)
+                .postId(newPostId)
+                .build();
+        given()
+                .body(newComment)
+                .when()
+                .post(Comments)
+                .then()
+                .statusCode(200)
+                .body("data.id",Matchers.not(Matchers.emptyOrNullString()))
+                .body("data.post_id",Matchers.equalTo(newPostId))
+                .body("data.email",Matchers.equalTo(newEmail))
+                .body("data.name",Matchers.equalTo(newName))
+                .body("data.body",Matchers.equalTo(newBody));
+    }
+    @Test
+    void GetRandomComment(){
+        var randomId = new Random().nextInt(1800);
+        given()
+                .contentType(ContentType.JSON)
+                .when()
+                .get(Comments+"/"+randomId)
+                .then()
+                .statusCode(200)
+                .body("data.id",Matchers.equalTo(randomId))
+                .body("data.post_id",Matchers.not(Matchers.emptyOrNullString()))
+                .body("data.name",Matchers.not(Matchers.emptyOrNullString()))
+                .body("data.email",Matchers.not(Matchers.emptyOrNullString()))
+                .body("data.body",Matchers.not(Matchers.emptyOrNullString()));
+    }
+    @Test
+    void UpdateRandomComment(){
+        var faker = new Faker();
+        var UpdateCommentId = new Random().nextInt(1800);
+        var newName = faker.name().fullName();
+        var newBody = faker.chuckNorris().fact();
+        var newEmail = faker.internet().emailAddress();
+        var UpdateComment = CreateCommentsRequestData.builder()
+                .body(newBody)
+                .postId(UpdateCommentId)
+                .name(newName)
+                .email(newEmail)
+                .build();
+        given()
+                .body(UpdateComment)
+                .when()
+                .put(Comments+"/"+)
+
 
     }
 
