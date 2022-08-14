@@ -298,6 +298,7 @@ public class APItest {
     @Test
     void UpdateRandomComment(){
         var faker = new Faker();
+        var randomId = new Random().nextInt(1800);
         var UpdateCommentId = new Random().nextInt(1800);
         var newName = faker.name().fullName();
         var newBody = faker.chuckNorris().fact();
@@ -311,8 +312,26 @@ public class APItest {
         given()
                 .body(UpdateComment)
                 .when()
-                .put(Comments+"/"+)
-
+                .put(Comments+"/"+randomId)
+                .then()
+                .statusCode(200)
+                .body("data.id",Matchers.equalTo(randomId))
+                .body("data.post_id",Matchers.equalTo(UpdateCommentId))
+                .body("data.body",Matchers.equalTo(newBody))
+                .body("data.email",Matchers.equalTo(newEmail))
+                .body("data.name",Matchers.equalTo(newName));
+    }
+    @Test
+    void DeleteRandomCommentTest(){
+        var randomId = new Random().nextInt(1800);
+        given()
+                .when()
+                .delete(Comments+"/"+randomId)
+                .then()
+                .statusCode(200)
+                .body("code",Matchers.equalTo(204))
+                .body("meta",Matchers.equalTo(null))
+                .body("data",Matchers.equalTo(null));
 
     }
 

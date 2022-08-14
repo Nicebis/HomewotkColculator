@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="892f0350-9646-4111-8552-61f7f7b730ab" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/APIhomework/CreateCommentsRequestData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/APIhomework/APItest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/APIhomework/APItest.java" afterDir="false" />
     </list>
@@ -42,7 +41,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;org.infernus.idea.checkstyle.CheckStyleConfigurable&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.APItest.GetRandomComment">
+  <component name="RunManager" selected="TestNG.APItest.DeleteRandomCommentTest">
     <configuration name="APItest.CreateCommentTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="HomewotkColculator" />
       <extension name="coverage">
@@ -61,7 +60,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="APItest.CreatePostTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="APItest.DeleteRandomCommentTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="HomewotkColculator" />
       <extension name="coverage">
         <pattern>
@@ -71,7 +70,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="APIhomework" />
       <option name="MAIN_CLASS_NAME" value="APIhomework.APItest" />
-      <option name="METHOD_NAME" value="CreatePostTest" />
+      <option name="METHOD_NAME" value="DeleteRandomCommentTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -97,7 +96,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="APItest.UpdateRandomPostTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="APItest.UpdateRandomComment" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="HomewotkColculator" />
       <extension name="coverage">
         <pattern>
@@ -107,7 +106,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="APIhomework" />
       <option name="MAIN_CLASS_NAME" value="APIhomework.APItest" />
-      <option name="METHOD_NAME" value="UpdateRandomPostTest" />
+      <option name="METHOD_NAME" value="UpdateRandomComment" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -135,11 +134,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.APItest.DeleteRandomCommentTest" />
+        <item itemvalue="TestNG.APItest.UpdateRandomComment" />
         <item itemvalue="TestNG.APItest.GetRandomComment" />
         <item itemvalue="TestNG.APItest.CreateCommentTest" />
         <item itemvalue="TestNG.APItest.getAllComments" />
-        <item itemvalue="TestNG.APItest.CreatePostTest" />
-        <item itemvalue="TestNG.APItest.UpdateRandomPostTest" />
       </list>
     </recent_temporary>
   </component>
