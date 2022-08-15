@@ -29,6 +29,7 @@ public class APItest {
 
     private RequestSpecification requestSpecification;
     private ResponseSpecification responseSpecification;
+    private PeopleClient peopleClient;
 
     @BeforeSuite
     public void beforeSuite() {
@@ -47,14 +48,13 @@ public class APItest {
         RestAssured.baseURI = Base_URL;
         RestAssured.requestSpecification = requestSpecification;
         RestAssured.responseSpecification = responseSpecification;
+        peopleClient = new PeopleClient();
+
     }
 
     @Test
     void getUsersAllTest() {
-        given()
-                .contentType(ContentType.JSON)
-                .when()
-                .get(Users)
+        peopleClient.GetAllUsers()
                 .then()
                 .statusCode(200)
                 .body("code", Matchers.equalTo(200))
@@ -82,10 +82,7 @@ public class APItest {
                 .email(newEmail)
                 .status(newRandomStatus)
                 .build();
-        given()
-                .body(personRequest)
-                .when()
-                .post(Users)
+        peopleClient.CreateUser(personRequest)
                 .then()
                 .statusCode(200)
                 .body("data.id", Matchers.not(Matchers.emptyOrNullString()))
@@ -97,10 +94,7 @@ public class APItest {
     @Test
     void GetRandomUserTest(){
         var randomId = new Random().nextInt(3800);
-        given()
-                .contentType(ContentType.JSON)
-                .when()
-                .get(Users+"/"+randomId)
+        peopleClient.GetRandomUser(randomId)
                 .then()
                 .statusCode(200)
                 .body("data.id",Matchers.equalTo(randomId))
@@ -112,10 +106,7 @@ public class APItest {
     @Test
     void DeleteRandomUser(){
         var randomId = new Random().nextInt(3800);
-        given()
-                .contentType(ContentType.JSON)
-                .when()
-                .delete(Users+"/"+randomId)
+        peopleClient.DeleteRandomUser(randomId)
                 .then()
                 .statusCode(200)
                 .body("code", Matchers.equalTo(204))
