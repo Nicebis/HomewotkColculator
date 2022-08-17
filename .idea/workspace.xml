@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="892f0350-9646-4111-8552-61f7f7b730ab" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/AllureHomework/SeleniumTestEx3WithAllure.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/AllureHomework/StepMethod3WithAllure.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Resources/SuiteAllure.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/resources/SuiteAllure.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/resources/allure.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/page/objects/Ex3/SeleniumTestEx3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/page/objects/Ex3/SeleniumTestEx3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Resources/SuiteAllure.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +30,13 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="enabledProfiles">
+      <list>
+        <option value="allure-rest-assured" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectId" id="2Bei3avGieuYzxginYNFcslVXLT" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -42,6 +49,10 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "last_opened_file_path": "C:/Users/User/HomewotkColculator/src/test/java/AllureHomework",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "org.infernus.idea.checkstyle.CheckStyleConfigurable"
   }
 }]]></component>
@@ -53,7 +64,7 @@
       <recent name="C:\Users\User\HomewotkColculator\src\test\java\Resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.APItest.getUsersAllTest">
+  <component name="RunManager" selected="TestNG.C:/Users/User/HomewotkColculator/src/test/java/resources/SuiteAllure.xml">
     <configuration name="APItest.CreateUserTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="HomewotkColculator" />
       <extension name="coverage">
@@ -90,42 +101,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="APItest.GetRandomComment" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="HomewotkColculator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="APIhomework.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="APIhomework" />
-      <option name="MAIN_CLASS_NAME" value="APIhomework.APItest" />
-      <option name="METHOD_NAME" value="GetRandomComment" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="APItest.UpdateRandomComment" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="HomewotkColculator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="APIhomework.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="APIhomework" />
-      <option name="MAIN_CLASS_NAME" value="APIhomework.APItest" />
-      <option name="METHOD_NAME" value="UpdateRandomComment" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="APItest.getUsersAllTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="HomewotkColculator" />
       <extension name="coverage">
@@ -144,13 +119,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="C:/Users/User/HomewotkColculator/src/test/java/resources/SuiteAllure.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="HomewotkColculator" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/resources/SuiteAllure.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeleniumTestEx3WithAllure.SeleniumStepEx3" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="HomewotkColculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AllureHomework.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="AllureHomework" />
+      <option name="MAIN_CLASS_NAME" value="AllureHomework.SeleniumTestEx3WithAllure" />
+      <option name="METHOD_NAME" value="SeleniumStepEx3" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/User/HomewotkColculator/src/test/java/resources/SuiteAllure.xml" />
+        <item itemvalue="TestNG.SeleniumTestEx3WithAllure.SeleniumStepEx3" />
         <item itemvalue="TestNG.APItest.getUsersAllTest" />
         <item itemvalue="TestNG.APItest.CreateUserTest" />
         <item itemvalue="TestNG.APItest.DeleteRandomCommentTest" />
-        <item itemvalue="TestNG.APItest.UpdateRandomComment" />
-        <item itemvalue="TestNG.APItest.GetRandomComment" />
       </list>
     </recent_temporary>
   </component>
