@@ -1,5 +1,6 @@
 package AllureHomework;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
@@ -32,12 +33,14 @@ public class StepMethod3WithAllure {
         this.Proverka2=new SeleniumEx1PageProverki(driver);
 
     }
+    @Step("Входим в аккаунт яндекс почты")
     public void VxodVAkk(final String email,final String password,final String poisk){
         Vxod.VxodAkkaunt(poisk);
         Vxod.EmailVvod(email);
         Vxod.PasswordVvod(password);
         assertTrue(driver.getCurrentUrl().contains("mail.yandex.ru"));
     }
+    @Step("Отправляем письмо и проверяем,что оно появилось во входящих")
     public void SentLetter(final String adresat,final String LetterTema,final String LetterText,final String LetterAdresat){
         Letter.Write();
         Letter.Letter(adresat, LetterTema, LetterText);
@@ -49,10 +52,12 @@ public class StepMethod3WithAllure {
         Assert.assertEquals(Proverka.TestTema2(),LetterTema);
         Assert.assertEquals(Proverka.TestText(),LetterText);
     }
+    @Step("Заходим в корзину и удаляем письмо из предыдущего шага")
     public void Korzina(){
         Elements.Trash();
         assertTrue(driver.findElement(By.xpath("//*[contains(text(),'Письма из этой папки автоматически удаляются')]")).isDisplayed());
     }
+    @Step("Выходим из аккаунта")
     public void Exit(){
         Sent.Exit();
         Proverka2.ExitPassword();

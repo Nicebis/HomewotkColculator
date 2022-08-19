@@ -7,6 +7,9 @@
     <list default="true" id="892f0350-9646-4111-8552-61f7f7b730ab" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AllureHomework/SeleniumTestEx3WithAllure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AllureHomework/SeleniumTestEx3WithAllure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AllureHomework/StepMethod3WithAllure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AllureHomework/StepMethod3WithAllure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/resources/allure.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/resources/allure.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +30,11 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../Program Files/apache-maven-3.8.6" />
+      </MavenGeneralSettings>
+    </option>
     <option name="enabledProfiles">
       <list>
         <option value="allure-rest-assured" />
@@ -49,7 +57,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.runner"
+    "settings.editor.selected.configurable": "MavenSettings"
   }
 }]]></component>
   <component name="RecentsManager">

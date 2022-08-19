@@ -1,10 +1,12 @@
 package AllureHomework;
 
+import io.qameta.allure.Description;
 import org.testng.annotations.Test;
 import page.objects.BaseSeleniumTestHooks;
 
 public class SeleniumTestEx3WithAllure extends BaseSeleniumTestHooks {
-    @Test
+    @Test(description = "Тест работы с корзиной в почте")
+    @Description("Тест для проверки умения работать с методом Steps")
     public void SeleniumStepEx3(){
         var email = "gimitrygimotrov@yandex.ru";
         var password = "Io87v5Ni";
