@@ -1,5 +1,6 @@
 package StepsSposob.Ex3;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
@@ -33,12 +34,14 @@ public class StepMethod3 {
         this.Proverka2=new SeleniumEx1PageProverki(driver);
 
     }
+    @Step("Вход в аккаунт яндекс почты")
     public void VxodVAkk(final String email,final String password,final String poisk){
         Vxod.VxodAkkaunt(poisk);
         Vxod.EmailVvod(email);
         Vxod.PasswordVvod(password);
         assertTrue(driver.getCurrentUrl().contains("mail.yandex.ru"));
     }
+    @Step("Написание письма и проверка его во входящих")
     public void SentLetter(final String adresat,final String LetterTema,final String LetterText,final String LetterAdresat){
         Letter.Write();
         Letter.Letter(adresat, LetterTema, LetterText);
@@ -50,10 +53,12 @@ public class StepMethod3 {
         Assert.assertEquals(Proverka.TestTema2(),LetterTema);
         Assert.assertEquals(Proverka.TestText(),LetterText);
     }
+    @Step("Работа с корзиной")
     public void Korzina(){
         Elements.Trash();
         assertTrue(driver.findElement(By.xpath("//*[contains(text(),'Письма из этой папки автоматически удаляются')]")).isDisplayed());
     }
+    @Step("Выход из аккаунта")
     public void Exit(){
         Sent.Exit();
         Proverka2.ExitPassword();

@@ -23,7 +23,6 @@ public abstract class BaseSeleniumTestHooks {
     protected StepMethod2 steps1;
     protected StepMethod3 steps2;
 
-
     @BeforeSuite
     public void beforeSuite() {
         WebDriverManager.chromedriver().setup();
@@ -37,7 +36,6 @@ public abstract class BaseSeleniumTestHooks {
         steps = new StepMethod(driver);
         steps1 = new StepMethod2(driver);
         steps2 = new StepMethod3(driver);
-
     }
     @AfterMethod
     public void tearDown() {

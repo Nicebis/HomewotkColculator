@@ -7,7 +7,9 @@
     <list default="true" id="892f0350-9646-4111-8552-61f7f7b730ab" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/resources/SuiteAllure.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/resources/SuiteAllure.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AllureHomework/StepMethod3WithAllure.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StepsSposob/Ex3/StepMethod3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepsSposob/Ex3/StepMethod3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/page/objects/BaseSeleniumTestHooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/page/objects/BaseSeleniumTestHooks.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +68,7 @@
       <recent name="C:\Users\User\HomewotkColculator\src\test\java\Resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/User/HomewotkColculator/src/test/java/resources/SuiteAllure.xml">
+  <component name="RunManager" selected="TestNG.SeleniumTestEx3WithAllure.SeleniumStepEx3">
     <configuration name="APItest.CreateUserTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="HomewotkColculator" />
       <extension name="coverage">
@@ -150,8 +152,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Users/User/HomewotkColculator/src/test/java/resources/SuiteAllure.xml" />
         <item itemvalue="TestNG.SeleniumTestEx3WithAllure.SeleniumStepEx3" />
+        <item itemvalue="TestNG.C:/Users/User/HomewotkColculator/src/test/java/resources/SuiteAllure.xml" />
         <item itemvalue="TestNG.SeleniumTestEx3WithAllure" />
         <item itemvalue="TestNG.APItest.getUsersAllTest" />
         <item itemvalue="TestNG.APItest.CreateUserTest" />
@@ -218,6 +220,15 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/AllureHomework/SeleniumTestEx3WithAllure.java</url>
+          <line>9</line>
+          <properties class="AllureHomework.SeleniumTestEx3WithAllure" method="SeleniumStepEx3">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/Selenium/BaseSeleniumTestEx1.java</url>
