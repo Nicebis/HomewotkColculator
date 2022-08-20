@@ -1,7 +1,9 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 
 <suite name="Allure Test">
-    <packages>
-        <package name="AllureHomework.SeleniumTestEx3WithAllure"/>
-    </packages>
+    <test name="SeleniumStepEx3">
+        <packages>
+            <package name="AllureHomework.*"/>
+        </packages>
+    </test>
 </suite>

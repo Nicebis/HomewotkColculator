@@ -20,7 +20,7 @@
                 <activeByDefault>true</activeByDefault>
             </activation>
             <properties>
-                <lesson.suite.base.dir>resources</lesson.suite.base.dir>
+                <lesson.suite.base.dir>${project.basedir}/src/test/java/resources</lesson.suite.base.dir>
                 <test.suite.name>SuiteAllure.xml</test.suite.name>
             </properties>
         </profile>
@@ -114,17 +114,12 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M7</version>
                 <configuration>
-                    <argLine>
-                        -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
-                    </argLine>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>
+                            ${lesson.suite.base.dir}/${test.suite.name}
+                        </suiteXmlFile>
+                    </suiteXmlFiles>
                 </configuration>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.aspectj</groupId>
-                        <artifactId>aspectjweaver</artifactId>
-                        <version>${aspectj.version}</version>
-                    </dependency>
-                </dependencies>
             </plugin>
         </plugins>
     </build>
