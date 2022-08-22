@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="892f0350-9646-4111-8552-61f7f7b730ab" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/AllureHomeworkV2/StepMethod3WithAllure.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AllureHomework/StepMethod3WithAllure.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AllureHomework/SeleniumTestEx3WithAllure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AllureHomework/SeleniumTestEx3WithAllure.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/StepsSposob/Ex3/StepMethod3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepsSposob/Ex3/StepMethod3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/page/objects/BaseSeleniumTestHooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/page/objects/BaseSeleniumTestHooks.java" afterDir="false" />
     </list>
@@ -35,11 +36,6 @@
         <option name="mavenHome" value="$PROJECT_DIR$/../../../Program Files/apache-maven-3.8.6" />
       </MavenGeneralSettings>
     </option>
-    <option name="enabledProfiles">
-      <list>
-        <option value="allure-rest-assured" />
-      </list>
-    </option>
   </component>
   <component name="ProjectId" id="2Bei3avGieuYzxginYNFcslVXLT" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -47,19 +43,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/HomewotkColculator/src/test/java/AllureHomework&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/User/Desktop/LevelUp_AT/Проекты/ElenaKonovalova_LevelUp-main",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "MavenSettings"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\User\HomewotkColculator\src\test\java\AllureHomework" />
@@ -67,26 +63,11 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\User\HomewotkColculator\src\test\java\Resources" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="AllureHomework" />
+    </key>
   </component>
   <component name="RunManager" selected="TestNG.SeleniumTestEx3WithAllure.SeleniumStepEx3">
-    <configuration name="APItest.CreateUserTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="HomewotkColculator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="APIhomework.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="APIhomework" />
-      <option name="MAIN_CLASS_NAME" value="APIhomework.APItest" />
-      <option name="METHOD_NAME" value="CreateUserTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="APItest.getUsersAllTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="HomewotkColculator" />
       <extension name="coverage">
@@ -119,7 +100,7 @@
       <module name="HomewotkColculator" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="AllureHomework.*" />
+          <option name="PATTERN" value="AllureHomeworkV2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -136,7 +117,7 @@
       <module name="HomewotkColculator" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="AllureHomework.*" />
+          <option name="PATTERN" value="AllureHomeworkV2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -150,13 +131,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SeleniumTestEx3.SeleniumStepEx3" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="HomewotkColculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="StepsSposob.Ex3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="StepsSposob.Ex3" />
+      <option name="MAIN_CLASS_NAME" value="StepsSposob.Ex3.SeleniumTestEx3" />
+      <option name="METHOD_NAME" value="SeleniumStepEx3" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.SeleniumTestEx3WithAllure.SeleniumStepEx3" />
-        <item itemvalue="TestNG.C:/Users/User/HomewotkColculator/src/test/java/resources/SuiteAllure.xml" />
         <item itemvalue="TestNG.SeleniumTestEx3WithAllure" />
+        <item itemvalue="TestNG.C:/Users/User/HomewotkColculator/src/test/java/resources/SuiteAllure.xml" />
+        <item itemvalue="TestNG.SeleniumTestEx3.SeleniumStepEx3" />
         <item itemvalue="TestNG.APItest.getUsersAllTest" />
-        <item itemvalue="TestNG.APItest.CreateUserTest" />
       </list>
     </recent_temporary>
   </component>
@@ -221,15 +220,6 @@
           </properties>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/AllureHomework/SeleniumTestEx3WithAllure.java</url>
-          <line>9</line>
-          <properties class="AllureHomework.SeleniumTestEx3WithAllure" method="SeleniumStepEx3">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/Selenium/BaseSeleniumTestEx1.java</url>
           <line>36</line>
@@ -244,6 +234,11 @@
           <url>file://$PROJECT_DIR$/src/test/java/StepsSposob/Ex1/SeleniumTetsEx1.java</url>
           <line>12</line>
           <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/AllureHomework/SeleniumTestEx3WithAllure.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

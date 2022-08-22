@@ -1,4 +1,4 @@
-package StepsSposob.Ex3;
+package AllureHomeworkV2;
 
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
@@ -8,7 +8,6 @@ import page.objects.Ex1.SeleniumEx1PageObjectVxod;
 import page.objects.Ex1.SeleniumEx1PageObjectWriteDraft;
 import page.objects.Ex1.SeleniumEx1PageOtpravkaAndExit;
 import page.objects.Ex1.SeleniumEx1PageProverki;
-import page.objects.Ex2.SeleniumPageObjectEx2Elements;
 import page.objects.Ex2.SeleniumPageObjectEx2Proverka;
 import page.objects.Ex3.SeleniumPageObjectEx3Elements;
 
@@ -16,7 +15,7 @@ import java.time.Duration;
 
 import static org.testng.Assert.assertTrue;
 
-public class StepMethod3 {
+public class StepMethod3WithAllure {
     private WebDriver driver;
     private SeleniumEx1PageObjectVxod Vxod;
     private SeleniumEx1PageObjectWriteDraft Letter;
@@ -24,7 +23,7 @@ public class StepMethod3 {
     private SeleniumEx1PageOtpravkaAndExit Sent;
     private SeleniumPageObjectEx2Proverka Proverka;
     private SeleniumEx1PageProverki Proverka2;
-    public StepMethod3(WebDriver driver){
+    public StepMethod3WithAllure(WebDriver driver){
         this.driver=driver;
         this.Vxod= new SeleniumEx1PageObjectVxod(driver);
         this.Elements = new SeleniumPageObjectEx3Elements(driver);

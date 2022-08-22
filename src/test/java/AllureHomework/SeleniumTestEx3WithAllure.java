@@ -17,9 +17,9 @@ public class SeleniumTestEx3WithAllure extends BaseSeleniumTestHooks {
         var NotInDraft = "В папке «Черновики» нет писем";
         var Fake="Gimitry Gimotrov";
         var TextKorzina="Письма из этой папки автоматически удаляются через 31 день.";
-        steps2.VxodVAkk(email,password,poisk);
-        steps2.SentLetter(email,ThemaLetter,TextLetter,Fake);
-        steps2.Korzina();
-        steps2.Exit();
+        steps3.VxodVAkk(email,password,poisk);
+        steps3.SentLetter(email,ThemaLetter,TextLetter,Fake);
+        steps3.Korzina();
+        steps3.Exit();
     }
 }

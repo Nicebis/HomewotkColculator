@@ -1,5 +1,6 @@
 package page.objects;
 
+import AllureHomeworkV2.StepMethod3WithAllure;
 import StepsSposob.Ex1.StepMethod;
 import StepsSposob.Ex2.StepMethod2;
 import StepsSposob.Ex3.StepMethod3;
@@ -22,6 +23,7 @@ public abstract class BaseSeleniumTestHooks {
     protected StepMethod steps;
     protected StepMethod2 steps1;
     protected StepMethod3 steps2;
+    protected StepMethod3WithAllure steps3;
 
     @BeforeSuite
     public void beforeSuite() {
@@ -36,6 +38,7 @@ public abstract class BaseSeleniumTestHooks {
         steps = new StepMethod(driver);
         steps1 = new StepMethod2(driver);
         steps2 = new StepMethod3(driver);
+        steps3 = new StepMethod3WithAllure(driver);
     }
     @AfterMethod
     public void tearDown() {
