@@ -9,6 +9,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.ITestContext;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
@@ -31,7 +32,7 @@ public abstract class BaseSeleniumTestHooks {
     }
 
     @BeforeMethod
-    public void setUp() {
+    public void setUp(ITestContext context) {
         driver = new ChromeDriver();
         driver.navigate().to(GOOGLE_URL);
         driver.manage().window().maximize();
@@ -39,6 +40,8 @@ public abstract class BaseSeleniumTestHooks {
         steps1 = new StepMethod2(driver);
         steps2 = new StepMethod3(driver);
         steps3 = new StepMethod3WithAllure(driver);
+        context.setAttribute("driver",driver);
+
     }
     @AfterMethod
     public void tearDown() {

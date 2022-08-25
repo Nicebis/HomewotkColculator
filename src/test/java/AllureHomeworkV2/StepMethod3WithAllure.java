@@ -54,6 +54,7 @@ public class StepMethod3WithAllure {
         Elements.Trash();
         assertTrue(driver.findElement(By.xpath("//*[contains(text(),'Письма из этой папки автоматически удаляются')]")).isDisplayed());
     }
+
     public void Exit(){
         Sent.Exit();
         Proverka2.ExitPassword();
