@@ -8,6 +8,7 @@ import com.github.javafaker.Faker;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestContext;
 import org.testng.annotations.AfterMethod;
@@ -33,7 +34,8 @@ public abstract class BaseSeleniumTestHooks {
 
     @BeforeMethod
     public void setUp(ITestContext context) {
-        driver = new ChromeDriver();
+        final var headless = System.getProperty("browser.headless","false");
+        driver = new ChromeDriver(new ChromeOptions().setHeadless(Boolean.parseBoolean(headless)));
         driver.navigate().to(GOOGLE_URL);
         driver.manage().window().maximize();
         steps = new StepMethod(driver);
