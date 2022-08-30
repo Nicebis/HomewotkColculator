@@ -24,7 +24,7 @@
                 <activeByDefault>true</activeByDefault>
             </activation>
             <properties>
-                <lesson.suite.base.dir>${project.basedir}/src/test/java/resources</lesson.suite.base.dir>
+                <lesson.suite.base.dir>${project.basedir}/src/test/resources</lesson.suite.base.dir>
                 <test.suite.name>SuiteAllure.xml</test.suite.name>
             </properties>
         </profile>
