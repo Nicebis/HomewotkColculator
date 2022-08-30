@@ -34,9 +34,8 @@ public abstract class BaseSeleniumTestHooks {
 
     @BeforeMethod
     public void setUp(ITestContext context) {
-        //final var headless = System.getProperty("browser.headless","false");
-        //(new ChromeOptions().setHeadless(Boolean.parseBoolean(headless))
-        driver = new ChromeDriver();
+        final var headless = System.getProperty("browser.headless","false");
+        driver = new ChromeDriver((new ChromeOptions().setHeadless(Boolean.parseBoolean(headless))));
         driver.navigate().to(GOOGLE_URL);
         driver.manage().window().maximize();
         steps = new StepMethod(driver);
